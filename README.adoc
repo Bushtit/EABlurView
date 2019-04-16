@@ -7,11 +7,11 @@
 :version: 1.0.0
 :na: N/A
 :ios: 8.0
-:macos: 10.10
+:macos: {na}
 :watchos: {na}
 :tvos: {na}
 :linux: {na}
-:xcode: 9.3
+:xcode: 10.2
 :swift: 5
 :license: MIT
 :sep: %20%7C%20
