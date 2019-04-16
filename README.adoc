@@ -105,3 +105,120 @@ You are welcome to fork and submit pull requests.
 ----
 import {name}
 ----
+
+=== Example
+
+Blur the whole
+
+[source, swift, subs="verbatim,attributes"]
+----
+let blurView = DynamicBlurView(frame: view.bounds)
+blurView.blurRadius = 10
+view.addSubview(blurView)
+----
+
+Animation
+
+[source, swift, subs="verbatim,attributes"]
+----
+UIView.animateWithDuration(0.5) {
+    blurView.blurRadius = 30
+}
+----
+
+Ratio
+
+[source, swift, subs="verbatim,attributes"]
+----
+blurView.blurRatio = 0.5
+----
+
+### Variable
+
+[source, swift, subs="verbatim,attributes"]
+----
+var drawsAsynchronously: Bool
+----
+
+- When true, it captures displays image and blur it asynchronously. Try to set true if needs more performance.
+- Asynchronous drawing is possibly crash when needs to process on main thread that drawing with animation for example.
+- Default is false.
+
+[source, swift, subs="verbatim,attributes"]
+----
+var blurRadius: CGFloat
+----
+
+- Strength of the blur.
+
+[source, swift, subs="verbatim,attributes"]
+----
+var trackingMode: TrackingMode
+----
+
+- Mode for update frequency.
+- `Common` is constantly updated.
+- `Tracking` is only during scrolling update.
+- `None` is not update.
+
+[source, swift, subs="verbatim,attributes"]
+----
+var blendColor: UIColor?
+----
+
+- Blend in the blurred image.
+
+[source, swift, subs="verbatim,attributes"]
+----
+var iterations: Int
+----
+
+- Number of times for blur.
+- Default is 3.
+
+[source, swift, subs="verbatim,attributes"]
+----
+var isDeepRendering: Bool
+----
+
+- If the view want to render beyond the layer, should be true.
+- Default is false.
+
+[source, swift, subs="verbatim,attributes"]
+----
+var blurRatio: CGFloat
+----
+
+- When none of tracking mode, it can change the radius of blur with the ratio. Should set from 0 to 1.
+- Default is 1.
+
+[source, swift, subs="verbatim,attributes"]
+----
+var quality: CaptureQuality
+----
+
+- Quality of captured image.
+- Default is medium.
+
+### Function
+
+[source, swift, subs="verbatim,attributes"]
+----
+func refresh()
+----
+
+- Remove cache of blur image then get it again.
+
+[source, swift, subs="verbatim,attributes"]
+----
+func remove()
+----
+
+- Remove cache of blur image.
+
+[source, swift, subs="verbatim,attributes"]
+----
+func animate()
+----
+
+- Should use when needs to change layout with animation when is set none of tracking mode.

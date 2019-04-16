@@ -13,6 +13,7 @@
 		5CEC1E12226588AC003194AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CEC1E10226588AC003194AE /* Main.storyboard */; };
 		5CEC1E14226588AD003194AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CEC1E13226588AD003194AE /* Assets.xcassets */; };
 		5CEC1E17226588AD003194AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CEC1E15226588AD003194AE /* LaunchScreen.storyboard */; };
+		5CEC1E1F22658B29003194AE /* EABlurView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CEC1E1E22658B29003194AE /* EABlurView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		5CEC1E13226588AD003194AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CEC1E16226588AD003194AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CEC1E18226588AD003194AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CEC1E1E22658B29003194AE /* EABlurView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EABlurView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F696A3D080E30C2F8A023A23 /* Pods-All-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-All-Sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-All-Sample/Pods-All-Sample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CEC1E1F22658B29003194AE /* EABlurView.framework in Frameworks */,
 				2BF756AB7D66C892985B1B00 /* Pods_All_Sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,6 +86,7 @@
 		AB3CD975263E3653BF95AEF0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5CEC1E1E22658B29003194AE /* EABlurView.framework */,
 				0FABF9A4AF03BC2269DFD22D /* Pods_All_Sample.framework */,
 			);
 			name = Frameworks;

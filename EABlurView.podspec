@@ -27,6 +27,7 @@ Pod::Spec.new do |s|
   s.default_subspecs = 'Core'
 
   s.subspec 'Core' do |sp|
+    sp.frameworks    = 'Foundation', 'UIKit'
     sp.source_files  = 'EABlurView/Core/**/*.swift'
   end
 end
