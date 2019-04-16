@@ -1,0 +1,18 @@
+PODS:
+  - EABlurView (1.0.0):
+    - EABlurView/Core (= 1.0.0)
+  - EABlurView/Core (1.0.0)
+
+DEPENDENCIES:
+  - EABlurView (from `../`)
+
+EXTERNAL SOURCES:
+  EABlurView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  EABlurView: f211f9790d2116e731c5573aeaa8bf4a7c27e68a
+
+PODFILE CHECKSUM: 34a4cf5bb9d7316a20276d5b59318b643641a6e1
+
+COCOAPODS: 1.5.3
