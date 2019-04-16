@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   # s.screenshot = ''
 
   s.ios.deployment_target     = '8.0'
-  s.osx.deployment_target     = '10.10'
+# s.osx.deployment_target     = '10.10'
 #  s.tvos.deployment_target    = '9.0'
 #  s.watchos.deployment_target = '2.0'
 
@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   #s.dependency ""
 
   s.default_subspecs = 'Core'
+  s.frameworks       = 'Foundation', 'UIKit'
 
   s.subspec 'Core' do |sp|
     sp.frameworks    = 'Foundation', 'UIKit'
